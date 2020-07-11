@@ -18,6 +18,8 @@ function converter() {
         if (output[i] == 0 || output[i] == 1) {
             soma += output[i] * Math.pow(2, i);
         } else {
+            document.querySelector('#num-bin').value = '';
+            document.querySelector('#num-dec').value = '';
             alert('Digite somente números binários!');
             return;
         }
@@ -25,7 +27,7 @@ function converter() {
 
     console.log(soma);
 
-    
+
     return document.querySelector('#num-dec').value = soma;
 }
 
