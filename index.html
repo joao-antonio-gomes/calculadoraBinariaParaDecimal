@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Calculadora Binária para Decimal</title>
@@ -12,12 +13,20 @@
 
 <body>
     <div class="container">
-        <h1>Calculadora Binária para Decimal</h1>
-        <div>
-            <form class="col-3 formulario-calculadora">
-                <input type="number" class="form-control">
+        <div class="m-auto col-8 text-center">
+            <h1 class="pt-5">Calculadora Binária para Decimal</h1>
 
-            </form>
+            <div>
+                <form class="col-6 formulario-calculadora mt-5 mx-auto">
+                    <label class="text-center">Número Binário
+                        <input type="number" class="form-control col-12"></label>
+
+                    <label class="text-center">Número Decimal
+                        <input type="number" class="form-control col-12"></label>
+
+                    <button class="btn col-5 btn-success mx-auto mt-2">Converter</button>
+                </form>
+            </div>
         </div>
 
     </div>
